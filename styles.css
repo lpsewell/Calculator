@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.output {
+    grid-column: 1/ -1;
+    background-color: #eee;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #2196F3;
+  padding: 10px;
+   grid-gap: 10px;
+}
+
+.grid-item {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+button:hover {
+    background-color: #a9a9a9;
+}
+.span-2 {
+  cursor: pointer;
+  grid-column: span 2;
+}
+
+.btn {
+  background-color:crimson;
+  font-size: 30px;
+  text-align: center;  
+}
+
+.output .previous-operand{
+        color:#000;
+        font-size: 1.5rem;
+      }
+
+      .output .current-operand{
+        color: #000;
+        font-size: 2.5rem;
+      }
